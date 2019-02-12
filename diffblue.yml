@@ -349,3 +349,243 @@ phases:
       file: com/alicp/jetcache/support/DefaultCacheMonitorManager.class
       sourceDir: jetcache-core/src/main/java
       sourceFile: com/alicp/jetcache/support/DefaultCacheMonitorManager.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/JetCacheExecutor.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/JetCacheExecutor.java
+  - target:
+    - dir: jetcache-starter/jetcache-autoconfigure/target/classes
+      file: com/alicp/jetcache/autoconfigure/RedisLettuce4AutoConfiguration.class
+      sourceDir: jetcache-starter/jetcache-autoconfigure/src/main/java
+      sourceFile: com/alicp/jetcache/autoconfigure/RedisLettuce4AutoConfiguration.java
+    # Child of RedisLettuce4AutoConfiguration.class
+    - dir: jetcache-support/jetcache-redis-lettuce4/target/classes
+      file: com/alicp/jetcache/redis/lettuce4/LettuceConnectionManager.class
+      sourceDir: jetcache-support/jetcache-redis-lettuce4/src/main/java
+      sourceFile: com/alicp/jetcache/redis/lettuce4/LettuceConnectionManager.java
+    # Child of RedisLettuce4AutoConfiguration.class
+    - dir: jetcache-support/jetcache-redis-lettuce4/target/classes
+      file: com/alicp/jetcache/redis/lettuce4/RedisLettuceCacheBuilder.class
+      sourceDir: jetcache-support/jetcache-redis-lettuce4/src/main/java
+      sourceFile: com/alicp/jetcache/redis/lettuce4/RedisLettuceCacheBuilder.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/aop/CachePointcut.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/aop/CachePointcut.java
+    # Child of CachePointcut.class
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/method/CacheConfigUtil.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/method/CacheConfigUtil.java
+    # Child of CachePointcut.class
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/support/ConfigMap.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/support/ConfigMap.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/Cache.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/Cache.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/KryoValueEncoder.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/KryoValueEncoder.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/method/CacheHandler.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/method/CacheHandler.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/MultiLevelCache.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/MultiLevelCache.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/embedded/Cleaner.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/embedded/Cleaner.java
+  - target:
+    - dir: jetcache-starter/jetcache-autoconfigure/target/classes
+      file: com/alicp/jetcache/autoconfigure/ConfigTree.class
+      sourceDir: jetcache-starter/jetcache-autoconfigure/src/main/java
+      sourceFile: com/alicp/jetcache/autoconfigure/ConfigTree.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/external/AbstractExternalCache.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/external/AbstractExternalCache.java
+    # Child of AbstractExternalCache.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/AbstractCache.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/AbstractCache.java
+    # Child of AbstractExternalCache.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/CacheException.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/CacheException.java
+  - target:
+    - dir: jetcache-support/jetcache-redis-lettuce/target/classes
+      file: com/alicp/jetcache/redis/lettuce/LettuceConnectionManager.class
+      sourceDir: jetcache-support/jetcache-redis-lettuce/src/main/java
+      sourceFile: com/alicp/jetcache/redis/lettuce/LettuceConnectionManager.java
+  - target:
+    - dir: jetcache-support/jetcache-redis-lettuce4/target/classes
+      file: com/alicp/jetcache/redis/lettuce4/LettuceConnectionManager.class
+      sourceDir: jetcache-support/jetcache-redis-lettuce4/src/main/java
+      sourceFile: com/alicp/jetcache/redis/lettuce4/LettuceConnectionManager.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/StatInfoLogger.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/StatInfoLogger.java
+  - target:
+    - dir: jetcache-support/jetcache-redis-lettuce/target/classes
+      file: com/alicp/jetcache/redis/lettuce/LettuceConnectionManager.class
+      sourceDir: jetcache-support/jetcache-redis-lettuce/src/main/java
+      sourceFile: com/alicp/jetcache/redis/lettuce/LettuceConnectionManager.java
+  - target:
+    - dir: jetcache-support/jetcache-redis-lettuce4/target/classes
+      file: com/alicp/jetcache/redis/lettuce4/LettuceConnectionManager.class
+      sourceDir: jetcache-support/jetcache-redis-lettuce4/src/main/java
+      sourceFile: com/alicp/jetcache/redis/lettuce4/LettuceConnectionManager.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/DefaultCacheMonitor.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/DefaultCacheMonitor.java
+    # Child of DefaultCacheMonitor.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/CacheGetResult.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/CacheGetResult.java
+    # Child of DefaultCacheMonitor.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/CacheMonitor.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/CacheMonitor.java
+    # Child of DefaultCacheMonitor.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/CacheResult.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/CacheResult.java
+    # Child of DefaultCacheMonitor.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/MultiGetResult.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/MultiGetResult.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/method/ExpressionEvaluator.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/method/ExpressionEvaluator.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/config/CacheAnnotationParser.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/config/CacheAnnotationParser.java
+    # Child of CacheAnnotationParser.class
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/aop/CacheAdvisor.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/aop/CacheAdvisor.java
+    # Child of CacheAnnotationParser.class
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/aop/JetCacheInterceptor.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/aop/JetCacheInterceptor.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/method/ProxyUtil.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/method/ProxyUtil.java
+  - target:
+    - dir: jetcache-starter/jetcache-autoconfigure/target/classes
+      file: com/alicp/jetcache/autoconfigure/AbstractCacheAutoInit.class
+      sourceDir: jetcache-starter/jetcache-autoconfigure/src/main/java
+      sourceFile: com/alicp/jetcache/autoconfigure/AbstractCacheAutoInit.java
+    # Child of AbstractCacheAutoInit.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/AbstractCacheBuilder.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/AbstractCacheBuilder.java
+    # Child of AbstractCacheAutoInit.class
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/support/ConfigProvider.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/support/ConfigProvider.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/AbstractValueDecoder.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/AbstractValueDecoder.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/embedded/AbstractEmbeddedCache.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/embedded/AbstractEmbeddedCache.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/aop/JetCacheInterceptor.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/aop/JetCacheInterceptor.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/method/ClassUtil.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/method/ClassUtil.java
+  - target:
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/external/ExternalKeyUtil.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/external/ExternalKeyUtil.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/support/SimpleCacheManager.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/support/SimpleCacheManager.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/support/ConfigProvider.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/support/ConfigProvider.java
+    # Child of ConfigProvider.class
+    - dir: jetcache-anno-api/target/classes
+      file: com/alicp/jetcache/anno/KeyConvertor.class
+      sourceDir: jetcache-anno-api/src/main/java
+      sourceFile: com/alicp/jetcache/anno/KeyConvertor.java
+    # Child of ConfigProvider.class
+    - dir: jetcache-anno-api/target/classes
+      file: com/alicp/jetcache/anno/SerialPolicy.class
+      sourceDir: jetcache-anno-api/src/main/java
+      sourceFile: com/alicp/jetcache/anno/SerialPolicy.java
+  - target:
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/support/SpringConfigProvider.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/support/SpringConfigProvider.java
+    # Child of SpringConfigProvider.class
+    - dir: jetcache-anno/target/classes
+      file: com/alicp/jetcache/anno/method/SpringCacheContext.class
+      sourceDir: jetcache-anno/src/main/java
+      sourceFile: com/alicp/jetcache/anno/method/SpringCacheContext.java
+    # Child of SpringConfigProvider.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/JavaValueDecoder.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/JavaValueDecoder.java
+    # Child of SpringConfigProvider.class
+    - dir: jetcache-core/target/classes
+      file: com/alicp/jetcache/support/SpringJavaValueDecoder.class
+      sourceDir: jetcache-core/src/main/java
+      sourceFile: com/alicp/jetcache/support/SpringJavaValueDecoder.java
+  - target:
+    - dir: jetcache-starter/jetcache-autoconfigure/target/classes
+      file: com/alicp/jetcache/autoconfigure/BeanDependencyManager.class
+      sourceDir: jetcache-starter/jetcache-autoconfigure/src/main/java
+      sourceFile: com/alicp/jetcache/autoconfigure/BeanDependencyManager.java
