@@ -78,7 +78,8 @@ phases:
     classpath: '/tools/cbmc/models.jar:.'
     max-nondet-array-length: 300
     max-nondet-string-length: 100
-    unwind: 10units:
+    unwind: 10
+units:
   - target:
     - dir: jetcache-core/target/classes
       file: com/alicp/jetcache/CacheUtil.class
